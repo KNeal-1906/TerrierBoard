@@ -1,3 +1,32 @@
 <resources>
     <string name="app_name">BostonU Facebook</string>
+    <string name="ek_img_content">ExportKit Image</string>
+    <string name="label_string">All post</string>
+    <string name="help_wanted_string">Help wanted</string>
+    <string name="name_string">Need help with math homework</string>
+    <string name="info_string">Hello all! I need help with MA 107. Im wondering if anyone has taken that class and is willing to tutor me for the final exam.</string>
+    <string name="_23_11_20_string">23/11/20</string>
+    <string name="harris_y__string">Harris Y.</string>
+    <string name="_881_commonwealth____string">881 commonwealth...</string>
+    <string name="_881_commonwealth____ek1_string">881 commonwealth...</string>
+    <string name="trade_string">Trade</string>
+    <string name="name_ek1_string">Selling my PS5 digital edition</string>
+    <string name="info_ek1_string">Im selling my ps5, bought it 1 year ago</string>
+    <string name="_23_11_20_ek1_string">23/11/20</string>
+    <string name="donald_e__string">Donald E.</string>
+    <string name="_48_harvard_avenue_string">48 Harvard avenue</string>
+    <string name="__320_string">$320</string>
+    <string name="trade_ek1_string">Trade</string>
+    <string name="name_ek2_string">Ticket to Taylor Swift concert</string>
+    <string name="info_ek2_string">I have 2 tickets to the Taylor Swift concert this weekend. Please email me if youre interested</string>
+    <string name="_23_11_20_ek2_string">23/11/20</string>
+    <string name="mario_k__string">Mario K.</string>
+    <string name="_189_bay_state_road_string">189 Bay state Road</string>
+    <string name="__120_string">$120</string>
+    <string name="event_string">Event</string>
+    <string name="name_ek3_string">Weekend Hiking trip signup</string>
+    <string name="info_ek3_string">Hello! The BUOC is planning on a weekend hiking trip to the white mountains. Click the button to Signup</string>
+    <string name="_23_11_20_ek3_string">23/11/20</string>
+    <string name="buoc_string">BUOC</string>
+    <string name="_252_daniel_highway_string">252 Daniel Highway</string>
 </resources>
