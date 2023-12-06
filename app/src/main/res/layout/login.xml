@@ -6,36 +6,21 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/signup_btn"
-        android:layout_width="409dp"
-        android:layout_height="49dp"
-        android:layout_marginBottom="25dp"
-        android:background="#cc0000"
-        android:text="Sign Up"
-        app:layout_constraintBottom_toTopOf="@+id/guest_btn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_btn"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <Button
         android:id="@+id/login_btn"
         android:layout_width="409dp"
         android:layout_height="49dp"
-        android:layout_marginBottom="160dp"
+        android:layout_marginBottom="208dp"
         android:background="#cc0000"
         android:text="Login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/guest_btn"
         android:layout_width="409dp"
         android:layout_height="49dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="120dp"
         android:background="#cc0000"
         android:text="Guest Mode"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -62,33 +47,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/terrier_board" />
-
-    <EditText
-        android:id="@+id/username"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
-        android:ems="10"
-        android:hint="Username"
-        android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/password"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/terrier_heading"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/login_btn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

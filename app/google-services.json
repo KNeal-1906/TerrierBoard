@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "770369977379",
+    "project_id": "terrierboard",
+    "storage_bucket": "terrierboard.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770369977379:android:247fb6d5e3cd412c2cc596",
+        "android_client_info": {
+          "package_name": "com.bignerdranch.android.bostonufacebook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "770369977379-q5nu21c4e80cok3tlfemrp7pq2q5lmf5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bignerdranch.android.bostonufacebook",
+            "certificate_hash": "1a5468bc5b24f7bf0be5351bbd3ee4225f411f5d"
+          }
+        },
+        {
+          "client_id": "770369977379-l4seukbof674abobsfs8hftns4ttt18k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2dWb4y633ymewwZmE2OORM38wbvkXS2M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "770369977379-l4seukbof674abobsfs8hftns4ttt18k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
