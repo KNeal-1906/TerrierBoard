@@ -16,4 +16,7 @@
     <color name="label_color">#E13E09</color>
     <color name="ellipse_5_color">#03ABA9</color>
 
+    <color name="blue">#459DE4</color>
+    <color name="red">#FF0000</color>
+
 </resources>
