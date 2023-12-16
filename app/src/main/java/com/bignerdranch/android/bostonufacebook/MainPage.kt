@@ -65,6 +65,7 @@ class MainPage : AppCompatActivity() {
         mGoogleSignInClient.signOut().addOnCompleteListener(this) {
             // Optional: Update UI or show a message to the user
             val intent = Intent(this@MainPage, MainActivity::class.java)
+            Toast.makeText(this, "User logged out succesfully", Toast.LENGTH_SHORT)
             startActivity(intent)
             finish()
         }

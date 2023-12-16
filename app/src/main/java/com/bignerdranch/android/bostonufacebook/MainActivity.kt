@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.login)
 
         auth = FirebaseAuth.getInstance()
-
+        //Get the current google user
         val currentUser = auth.currentUser
 
         if (currentUser != null) {
@@ -34,8 +34,9 @@ class MainActivity : AppCompatActivity() {
             finish() // finish the current activity to prevent the user from coming back to the SignInActivity using the back button
         }
 
-        val guestButton = findViewById<Button>(R.id.guest_btn)
-        guestButton.setOnClickListener {
+
+        val loginButton = findViewById<Button>(R.id.login_btn)
+        loginButton.setOnClickListener {
             // Switch to R.layout.page when the button is clicked
             signIn()
         }
