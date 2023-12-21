@@ -5,6 +5,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.bignerdranch.android.bostonufacebook.Adapter.AppAdapter
+import com.bignerdranch.android.bostonufacebook.Models.DataViewModel
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -16,6 +23,10 @@ private const val ARG_PARAM2 = "param2"
  * Use the [Home.newInstance] factory method to
  * create an instance of this fragment.
  */
+private lateinit var viewModel: DataViewModel
+private lateinit var dataRecyclerView: RecyclerView
+lateinit var adapter: AppAdapter
+
 class Home : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
@@ -55,5 +66,21 @@ class Home : Fragment() {
                     putString(ARG_PARAM2, param2)
                 }
             }
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        dataRecyclerView = view.findViewById(R.id.recyclerView)
+        dataRecyclerView.layoutManager = LinearLayoutManager(context)
+        dataRecyclerView.setHasFixedSize(true)
+        adapter = AppAdapter()
+        dataRecyclerView.adapter = adapter
+
+        viewModel = ViewModelProvider(this).get(DataViewModel::class.java)
+
+        viewModel.allData.observe(viewLifecycleOwner, Observer {
+
+            adapter.updateItemList(it)
+
+        })
     }
 }

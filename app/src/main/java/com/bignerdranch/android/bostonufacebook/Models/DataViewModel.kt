@@ -8,7 +8,7 @@ import com.bignerdranch.android.bostonufacebook.Repo.DataRepo
 class DataViewModel: ViewModel() {
     private val repository  : DataRepo
     private val _allData = MutableLiveData<List<Data>>()
-    val allUser : LiveData<List<Data>> = _allData
+    val allData : LiveData<List<Data>> = _allData
 
     init {
         repository=DataRepo().getInstance()
