@@ -35,7 +35,7 @@ class MakePost : AppCompatActivity() {
             val name = binding.titleInput.text.toString()
             val comment = binding.bodyInput.text.toString()
             database= FirebaseDatabase.getInstance().getReference("Data")
-            val Data = Data(name, comment)
+            val Data = Data(name, comment,sImage)
             database.child(itemId.toString()).setValue(Data).addOnCompleteListener{
                 binding.titleInput.text.clear()
                 binding.bodyInput.text.clear()
