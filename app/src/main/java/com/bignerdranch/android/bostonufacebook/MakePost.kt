@@ -72,6 +72,8 @@ class MakePost : AppCompatActivity() {
                 sImage= Base64.encodeToString(bytes,Base64.DEFAULT)
                 binding.imageView.setImageBitmap(myBitmap)
                 Toast.makeText(this, "Image selected", Toast.LENGTH_SHORT)
+                inputStream!!.close()
+
             }
             catch (ex: Exception){
                 Toast.makeText(this, ex.message.toString(), Toast.LENGTH_SHORT)
