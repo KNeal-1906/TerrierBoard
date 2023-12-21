@@ -52,6 +52,10 @@ class MainPage : AppCompatActivity() {
         binding.signOutBtn.setOnClickListener {
             signOutAndStartSignInActivity()
         }
+        binding.goToPost.setOnClickListener {
+            Toast.makeText(this,"you are going to the post page",Toast.LENGTH_SHORT)
+            startActivity(Intent(this, MakePost::class.java))
+        }
 
 
     }
