@@ -2,9 +2,9 @@ package com.bignerdranch.android.bostonufacebook
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import com.bignerdranch.android.bostonufacebook.Models.Data
-import com.bignerdranch.android.bostonufacebook.databinding.ActivityMainBinding
 import com.bignerdranch.android.bostonufacebook.databinding.ActivityMakePostBinding
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -15,9 +15,11 @@ class MakePost : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMakePostBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_make_post)
+        setContentView(binding.root)
 
-        binding.postBtn.setOnClickListener {val name = binding.titleInput.text.toString()
+        binding.postBtn.setOnClickListener {
+            Log.d("MakePostActivity", "Post button clicked")
+            val name = binding.titleInput.text.toString()
             val comment = binding.bodyInput.text.toString()
             database= FirebaseDatabase.getInstance().getReference("Data")
             val Data = Data(name, comment)
