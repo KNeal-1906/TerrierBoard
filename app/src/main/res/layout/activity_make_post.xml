@@ -128,15 +128,16 @@
 
     <ImageView
         android:id="@+id/add_image_btn"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="3dp"
         android:layout_marginBottom="23dp"
+        android:onClick="pickImage"
         app:layout_constraintBottom_toTopOf="@+id/location_view"
         app:layout_constraintEnd_toStartOf="@+id/capture_btn"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/body_input"
         app:layout_constraintVertical_bias="0.0"
@@ -144,16 +145,29 @@
 
     <ImageView
         android:id="@+id/capture_btn"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="92dp"
+        android:layout_marginEnd="288dp"
         android:layout_marginBottom="23dp"
         app:layout_constraintBottom_toTopOf="@+id/location_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/body_input"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/insert_image" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="131dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/location_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/capture_btn"
+        app:layout_constraintTop_toBottomOf="@+id/body_input"
+        tools:srcCompat="@tools:sample/avatars" />
 
     <Button
         android:id="@+id/post_btn"
@@ -177,5 +191,18 @@
         app:layout_constraintTop_toBottomOf="@+id/location_view"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/baseline_location_on_24" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginBottom="188dp"
+        android:text="Upload"
+        android:onClick="upload"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
