@@ -4,6 +4,7 @@ package com.bignerdranch.android.bostonufacebook
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import com.bignerdranch.android.bostonufacebook.Models.Data
 import com.google.android.gms.auth.api.signin.GoogleSignIn
@@ -34,23 +35,13 @@ class MainPage : AppCompatActivity() {
 
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso)
 
-        binding.postBtn.setOnClickListener {
-            val name = binding.editTextName.text.toString()
-            val comment = binding.editTextComment.text.toString()
 
-            database= FirebaseDatabase.getInstance().getReference("Data")
-            val Data = Data(name, comment)
-            database.child(name).setValue(Data).addOnCompleteListener{
-                binding.editTextName.text.clear()
-                binding.editTextComment.text.clear()
-                Toast.makeText(this, "Succesfully created an entry", Toast.LENGTH_SHORT).show()
-            }.addOnFailureListener {
-                binding.editTextName.text.clear()
-                binding.editTextComment.text.clear()
-                Toast.makeText(this, "You are a failure",Toast.LENGTH_SHORT)}
-        }
         binding.signOutBtn.setOnClickListener {
             signOutAndStartSignInActivity()
+        }
+        binding.goToPost.setOnClickListener {
+            Toast.makeText(this,"you are going to the post page",Toast.LENGTH_SHORT)
+            startActivity(Intent(this, MakePost::class.java))
         }
 
 

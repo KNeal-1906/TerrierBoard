@@ -3,6 +3,7 @@ package com.bignerdranch.android.bostonufacebook
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.Toast
@@ -38,6 +39,7 @@ class MainActivity : AppCompatActivity() {
         val loginButton = findViewById<Button>(R.id.login_btn)
 
         loginButton.setOnClickListener {
+            Log.d("MainActivity", "login pressed")
             // Switch to R.layout.page when the button is clicked
             signIn()
         }
