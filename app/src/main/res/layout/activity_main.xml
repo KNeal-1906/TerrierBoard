@@ -14,7 +14,6 @@
         android:layout_marginTop="16dp"
         android:layout_marginBottom="154dp"
         android:text="Go to post page"
-        app:layout_constraintBottom_toTopOf="@+id/space2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -27,33 +26,18 @@
         android:layout_marginTop="16dp"
         android:layout_marginBottom="154dp"
         android:text="SIGN OUT"
-        app:layout_constraintBottom_toTopOf="@+id/space2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/go_to_post"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-
-
-
-    <Space
-        android:id="@+id/space2"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginTop="230dp"
-        android:layout_marginBottom="301dp"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/go_to_post"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <FrameLayout
-        android:id="@+id/frame_Layout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="0dp">
 
-    </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

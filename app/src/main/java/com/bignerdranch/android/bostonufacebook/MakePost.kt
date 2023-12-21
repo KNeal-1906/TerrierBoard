@@ -19,6 +19,7 @@ import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import java.io.ByteArrayOutputStream
 import java.lang.Exception
+import kotlin.random.Random
 
 class MakePost : AppCompatActivity() {
     private lateinit var binding: ActivityMakePostBinding
@@ -31,17 +32,19 @@ class MakePost : AppCompatActivity() {
 
         binding.postBtn.setOnClickListener {
             Log.d("MakePostActivity", "Post button clicked")
-            var itemId= "101"
+            var itemId= Random.nextInt()
             val name = binding.titleInput.text.toString()
             val comment = binding.bodyInput.text.toString()
             database= FirebaseDatabase.getInstance().getReference("Data")
             val Data = Data(name, comment,sImage)
             database.child(itemId.toString()).setValue(Data).addOnCompleteListener{
                 binding.titleInput.text.clear()
+
                 binding.bodyInput.text.clear()
-                itemId+=1
+
                 Toast.makeText(this, "Succesfully created an entry", Toast.LENGTH_SHORT).show()
             }.addOnFailureListener {
+
                 binding.titleInput.text.clear()
                 binding.bodyInput.text.clear()
                 Toast.makeText(this, "You are a failure", Toast.LENGTH_SHORT)}
