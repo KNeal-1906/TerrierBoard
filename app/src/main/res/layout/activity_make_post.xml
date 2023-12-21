@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/trade_location_view"
+        android:layout_width="374dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="16dp"
+        android:text="Location"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/trade_location_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/trade_heading"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:text="General"
+        android:textAlignment="center"
+        android:textColor="#DC4D01"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/trade_title_view"
+        app:layout_constraintEnd_toStartOf="@+id/trade_account_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/trade_menu_btn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/trade_menu_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/trade_heading"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu" />
+
+    <!-- this is for the title text view -->
+    <!-- this is for the post's title input -->
+
+    <ImageView
+        android:id="@+id/trade_account_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/trade_title_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/account_head" />
+
+    <TextView
+        android:id="@+id/trade_title_view"
+        android:layout_width="374dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="12dp"
+        android:text="Title"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/trade_title_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/trade_body_view"
+        android:layout_width="374dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="12dp"
+        android:text="Body"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/trade_body_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/trade_title_input"
+        android:layout_width="374dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="12dp"
+        android:background="#D3D3D3"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/trade_body_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/trade_location_input"
+        android:layout_width="313dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="24dp"
+        android:background="#D3D3D3"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/trade_post_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/trade_body_input"
+        android:layout_width="374dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="100dp"
+        android:background="#D3D3D3"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/trade_location_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/trade_add_image_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/trade_location_view"
+        app:layout_constraintEnd_toStartOf="@+id/trade_capture_btn"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trade_body_input"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/capture_image" />
+
+    <ImageView
+        android:id="@+id/trade_capture_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/trade_location_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trade_body_input"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/insert_image" />
+
+    <Button
+        android:id="@+id/trade_post_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Make Post!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/trade_location_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/trade_location_input"
+        app:layout_constraintTop_toBottomOf="@+id/trade_location_view"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/baseline_location_on_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

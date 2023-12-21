@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity() {
 
 
         val loginButton = findViewById<Button>(R.id.login_btn)
+
         loginButton.setOnClickListener {
             // Switch to R.layout.page when the button is clicked
             signIn()
